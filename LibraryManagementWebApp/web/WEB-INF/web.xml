@@ -20,6 +20,14 @@
         <servlet-name>Admin_view_books</servlet-name>
         <servlet-class>za.ac.tut.web.Admin_view_books</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>BorrowBookServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.BorrowBookServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SearchBookServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.SearchBookServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddReturnedBookServlet</servlet-name>
         <url-pattern>/AddReturnedBookServlet.do</url-pattern>
@@ -39,6 +47,14 @@
     <servlet-mapping>
         <servlet-name>Admin_view_books</servlet-name>
         <url-pattern>/Admin_view_books.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BorrowBookServlet</servlet-name>
+        <url-pattern>/BorrowBookServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchBookServlet</servlet-name>
+        <url-pattern>/SearchBookServlet.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -3,8 +3,8 @@
     Created on : May 12, 2025, 3:02:28 PM
     Author     : TSHEGO
 --%>
+<%@page import="za.ac.tut.entity.Book"%>
 <%@page import="java.util.List"%>
-<%@page import="za.ac.tut.entities.Book"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
