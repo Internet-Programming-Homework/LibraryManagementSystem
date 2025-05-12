@@ -1,42 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+<web-app version="3.1" 
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
     <servlet>
         <servlet-name>AddReturnedBookServlet</servlet-name>
         <servlet-class>za.ac.tut.web.AddReturnedBookServlet</servlet-class>
     </servlet>
+
     <servlet>
-<<<<<<< HEAD
         <servlet-name>CreateBookServlet</servlet-name>
         <servlet-class>za.ac.tut.web.CreateBookServlet</servlet-class>
     </servlet>
+
     <servlet>
         <servlet-name>ViewBookServlet</servlet-name>
         <servlet-class>za.ac.tut.web.ViewBookServlet</servlet-class>
-=======
+    </servlet>
+
+    <servlet>
         <servlet-name>ViewBorrowedBooks</servlet-name>
         <servlet-class>za.ac.tut.web.ViewBorrowedBooks</servlet-class>
->>>>>>> 1692878cf7cb29459804e538ed879b3a4fcdd67a
     </servlet>
+
     <servlet-mapping>
         <servlet-name>AddReturnedBookServlet</servlet-name>
         <url-pattern>/AddReturnedBookServlet.do</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
-<<<<<<< HEAD
         <servlet-name>CreateBookServlet</servlet-name>
         <url-pattern>/CreateBookServlet.do</url-pattern>
     </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>ViewBookServlet</servlet-name>
         <url-pattern>/ViewBookServlet.do</url-pattern>
-=======
+    </servlet-mapping>
+
+    <servlet-mapping>
         <servlet-name>ViewBorrowedBooks</servlet-name>
         <url-pattern>/ViewBorrowedBooks.do</url-pattern>
->>>>>>> 1692878cf7cb29459804e538ed879b3a4fcdd67a
     </servlet-mapping>
+
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+
 </web-app>
