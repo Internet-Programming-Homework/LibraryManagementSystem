@@ -29,4 +29,7 @@ public interface BookFacadeLocal {
 
     int count();
     
+         List<Book> getAllPerTitle(String title);
+
+    
 }
