@@ -4,9 +4,25 @@
         <servlet-name>AddReturnedBookServlet</servlet-name>
         <servlet-class>za.ac.tut.web.AddReturnedBookServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CreateBookServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.CreateBookServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewBookServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.ViewBookServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddReturnedBookServlet</servlet-name>
         <url-pattern>/AddReturnedBookServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateBookServlet</servlet-name>
+        <url-pattern>/CreateBookServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewBookServlet</servlet-name>
+        <url-pattern>/ViewBookServlet.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
