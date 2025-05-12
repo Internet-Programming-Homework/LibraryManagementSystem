@@ -4,9 +4,17 @@
         <servlet-name>AddReturnedBookServlet</servlet-name>
         <servlet-class>za.ac.tut.web.AddReturnedBookServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ViewBorrowedBooks</servlet-name>
+        <servlet-class>za.ac.tut.web.ViewBorrowedBooks</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddReturnedBookServlet</servlet-name>
         <url-pattern>/AddReturnedBookServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ViewBorrowedBooks</servlet-name>
+        <url-pattern>/ViewBorrowedBooks.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
