@@ -1,0 +1,137 @@
+
+<html>
+    <head>
+        <title>
+            Admin dashboard
+        </title>
+  <style>
+        html{
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/book.webp');
+            
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.5em;
+            position: relative;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            margin-top: 15%;
+        }
+
+        .content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    animation: floatText 4s ease-in-out infinite;
+}
+
+@keyframes rotateText {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+        .btn {
+            background-color: #0056b3;
+            color: white;
+            padding: 14px 28px;
+            font-size: 1em;
+            border: none;
+            border-radius: 8px;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+.section {
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 50px 30px;
+            margin-top: 30px;
+        }
+
+        .section h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            color: #ddd;
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.1em;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .admin-login-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.admin-login-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.admin-login-icon:hover img {
+    transform: scale(1.1);
+}
+
+    </style>
+    </head>
+    <body>
+         <header>
+        Library Management System
+    </header>
+
+        <div class="content">
+        <h1>Welcome</h1>
+       
+        <a href="user_deshboard.jsp"><button class="btn">user</button></a>
+       <a href="admin_desh_board.jsp"><button class="btn">admin</button></a>
+        </div>
+         <footer >
+    <p>&copy; 2025 Library Management System</p>
+</footer>
+</body>
+</html>
